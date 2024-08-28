@@ -18,6 +18,41 @@ The Enumeration lab is aimed to showcase the key details that can be extracted t
 - Operative System Linux
 - Nmap, network mapper tool used for network discovery and security auditing.
 
+## Enumeration
+
+Enumeration is the process of systematically probing a target for information. It's a crucial tool for
+hackers. This information can help them target attacks more effectively and minimize collateral damage.
+Enumeration is one of the most important steps in ethical hacking because it gives hackers the
+information they need to launch an attack. For example, hackers who want to crack passwords
+need to know the usernames of valid users on that system (CrashTestSecurity.com, 2022).
+
+When it comes to network security, enumeration is a key process. By enumerating a system, you
+can gain a better understanding of that system and how it works. This knowledge can then be used
+to exploit vulnerabilities and gain access to confidential data.
+
+### Enumeration Techniques
+Several techniques can be used for enumeration, and the specific method depends on the type of
+system you are targeting. The most common methods include:
+Email IDs and Usernames: This involves collecting information about a system by identifying email
+addresses and usernames. This information can be used to brute-force passwords or gain access to
+sensitive data.
+Default Passwords: Another common method is identifying default passwords that may not have
+been changed. Exploiting these default credentials allows access to systems that are not properly
+secured.
+
+Successful enumeration can provide details like:
+- Operating System Details
+- Network Infrastructure Details
+- Valid Usernames
+- Machine Names
+- Shared Resource Names
+- Directory Names
+- Printer Names
+- Web Server Details
+
+This practical case will demonstrate how to scan for active hosts in a network using the Nmap tool
+on a Kali Linux system.
+
 ## Steps
 1.	Launch Kali Linux with root privileges.
 2.	Execute the following command to initiate the scan: nmap -sP 192.168.01/24
@@ -56,3 +91,11 @@ To enhance the effectiveness of enumeration, the following recommendations can b
 -	Document Scan Results: Thoroughly document the findings of the scan to facilitate subsequent analysis and review.
 -	Possess Basic Networking Knowledge: It is fundamental to understand networking concepts to accurately interpret scan results.
 
+### Bibliography
+
+- NMAP.org. (s.f.). Chapter 1. Getting Started with Nmap. Obtain from https://nmap.org/book/intro.html NMAP.org. (s.f.).
+- Chapter 11. Defenses Against Nmap. Obtain from https://nmap.org/book/defenses.html
+- NMAP.org. (s.f.). Firewall/IDS Evasion and Spoofing. Obtain from https://nmap.org/book/manbypass-firewalls-ids.html
+- NMAP.org. (s.f.). Port Scanning Techniques. Obtain from https://nmap.org/book/man-portscanning-techniques.html
+- NMAP.org. (s.f.). TCP SYN (Stealth) Scan (-sS). Obtain from https://nmap.org/book/synscan.html
+- CrashTestSecurity. (2022, May 9). What is enumeration in hacking? – cyber security blog. Obtain from https://crashtest-security.com/enumeration-cyber-security/
