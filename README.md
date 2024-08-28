@@ -76,7 +76,7 @@ To delve deeper into the network reconnaissance, we can expand our scan by incor
   
 By combining the ping scan (nmap -sP) and operating system detection scan (nmap -O), we obtain a comprehensive overview of the active hosts in the network, along with their respective operating systems. This information serves as a solid foundation for further network security analysis and potential penetration testing endeavors. Based on this, the attacker could have initiated a privilege escalation through the Windows Server by identifying open ports. Combined with tools like Wireshark, they could capture packets that the hosts send to the server or a website through DNS capture. They could have also established a MiTM attack where all network traffic passes through their device by modifying ARP tables.
 
-### Results
+## Results
 
 In this scenario, to prevent a scan attack like this, firewalls such as Intrusion Detection System (IDS) or Intrusion Prevention System (IPS) can be established. They monitor all network traffic to identify any known malicious behavior. One of the ways an attacker will try to compromise a network is by exploiting a vulnerability within a device or within the software. IDS/IPS identifies these exploitation attempts and blocks them before they successfully compromise any endpoint within the network. They also detect suspicious or unauthorized activities, such as phishing attacks, virus infection and distribution, malware and ransomware installation and download, denial of service (DoS), man-in-the-middle attacks, zero-day attacks, SQL injection, among others.
 
@@ -91,7 +91,7 @@ To enhance the effectiveness of enumeration, the following recommendations can b
 -	Document Scan Results: Thoroughly document the findings of the scan to facilitate subsequent analysis and review.
 -	Possess Basic Networking Knowledge: It is fundamental to understand networking concepts to accurately interpret scan results.
 
-### Bibliography
+## Bibliography
 
 - NMAP.org. (s.f.). Chapter 1. Getting Started with Nmap. Obtain from https://nmap.org/book/intro.html NMAP.org. (s.f.).
 - Chapter 11. Defenses Against Nmap. Obtain from https://nmap.org/book/defenses.html
